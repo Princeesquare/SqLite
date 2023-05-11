@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         init();
-        additem();
+        //additem()
+        btnAdd.setOnClickListener(){
+            additem();
+        }
     }
     fun init(){
         edWord = findViewById(R.id.edWord)
